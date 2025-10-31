@@ -1,3 +1,4 @@
+import patch_solana_httpx  # fixes httpx proxy bug before solana client loads
 import logging
 import asyncio
 import re
@@ -1780,4 +1781,5 @@ def main():
     application.run_polling()
 
 if __name__ == "__main__":
+
     main()
